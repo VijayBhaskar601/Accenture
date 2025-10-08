@@ -1,0 +1,8 @@
+---
+-hosts: all
+ connection: ssh
+
+ tasks:
+  - name: i am installing git on slave serviers
+    yum: name=git state=present
+...
